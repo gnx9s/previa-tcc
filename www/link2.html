@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Color theme for statusbar (Android only) -->
+        <meta name="theme-color" content="#2196f3" />
+        <!-- Your app title -->
+        <title>My App</title>
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+        <!-- CSS PERSONALIZADO PARA MENU-->
+        <link rel="stylesheet" href="css/personalizado.css" />
+        <!--Ícones Material Design-->
+        <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    </head>
+
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="link2" class="page">
+                    <!-- Top Navbar -->
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div
+                            class="navbar-inner sliding justify-content-center"
+                        >
+                            <div class="title"><strong>Buscar</strong></div>
+                            <div class="subnavbar">
+                                <form
+                                    data-search-container=".search-list"
+                                    data-search-in=".item-title"
+                                    class="searchbar searchbar-init"
+                                >
+                                    <div class="searchbar-inner">
+                                        <div class="searchbar-input-wrap">
+                                            <input
+                                                type="search"
+                                                placeholder="Buscar"
+                                            />
+                                            <i class="searchbar-icon"></i>
+                                            <span
+                                                class="input-clear-button"
+                                            ></span>
+                                        </div>
+                                        <span class="searchbar-disable-button"
+                                            >Cancelar</span
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="searchbar-backdrop"></div>
+                        <div
+                            class="posts"
+                            style="border: 1px solid var(--pretasso)"
+                        >
+                        <div class="card">
+                            <div class="card-header">
+                                <img
+                                    src="img/user.jpg"
+                                    alt=""
+                                    style="width: 3em; height: 3em"
+                                />
+                                <p style="font-size: 16px; margin: 0 auto">
+                                    (Nome do dono do post)
+                                    <br />
+                                    (Ranque do dono do post)
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <!-- Card content -->
+                                <div class="heart-container" title="Like">
+                                    <input
+                                        type="checkbox"
+                                        class="checkbox"
+                                        id="Give-It-An-Id"
+                                    />
+                                    <div class="svg-container">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            class="svg-outline"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            class="svg-filled"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="svg-celebrate"
+                                            width="100"
+                                            height="100"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <polygon
+                                                points="10,10 20,20"
+                                            ></polygon>
+                                            <polygon
+                                                points="10,50 20,50"
+                                            ></polygon>
+                                            <polygon
+                                                points="20,80 30,70"
+                                            ></polygon>
+                                            <polygon
+                                                points="90,10 80,20"
+                                            ></polygon>
+                                            <polygon
+                                                points="90,50 80,50"
+                                            ></polygon>
+                                            <polygon
+                                                points="80,80 70,70"
+                                            ></polygon>
+                                        </svg>
+                                    </div>
+                                    <span>1.2k</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p>(Data do post)</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img
+                                    src="img/user.jpg"
+                                    alt=""
+                                    style="width: 3em; height: 3em"
+                                />
+                                <p style="font-size: 16px; margin: 0 auto">
+                                    (Nome do dono do post)
+                                    <br />
+                                    (Ranque do dono do post)
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <!-- Card content -->
+                                <div class="heart-container" title="Like">
+                                    <input
+                                        type="checkbox"
+                                        class="checkbox"
+                                        id="Give-It-An-Id"
+                                    />
+                                    <div class="svg-container">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            class="svg-outline"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            class="svg-filled"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="svg-celebrate"
+                                            width="100"
+                                            height="100"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <polygon
+                                                points="10,10 20,20"
+                                            ></polygon>
+                                            <polygon
+                                                points="10,50 20,50"
+                                            ></polygon>
+                                            <polygon
+                                                points="20,80 30,70"
+                                            ></polygon>
+                                            <polygon
+                                                points="90,10 80,20"
+                                            ></polygon>
+                                            <polygon
+                                                points="90,50 80,50"
+                                            ></polygon>
+                                            <polygon
+                                                points="80,80 70,70"
+                                            ></polygon>
+                                        </svg>
+                                    </div>
+                                    <span>2.8k</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p>(Data do post)</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img
+                                    src="img/user.jpg"
+                                    alt=""
+                                    style="width: 3em; height: 3em"
+                                />
+                                <p style="font-size: 16px; margin: 0 auto">
+                                    (Nome do dono do post)
+                                    <br />
+                                    (Ranque do dono do post)
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <!-- Card content -->
+                                <div class="heart-container" title="Like">
+                                    <input
+                                        type="checkbox"
+                                        class="checkbox"
+                                        id="Give-It-An-Id"
+                                    />
+                                    <div class="svg-container">
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            class="svg-outline"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            class="svg-filled"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="svg-celebrate"
+                                            width="100"
+                                            height="100"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <polygon
+                                                points="10,10 20,20"
+                                            ></polygon>
+                                            <polygon
+                                                points="10,50 20,50"
+                                            ></polygon>
+                                            <polygon
+                                                points="20,80 30,70"
+                                            ></polygon>
+                                            <polygon
+                                                points="90,10 80,20"
+                                            ></polygon>
+                                            <polygon
+                                                points="90,50 80,50"
+                                            ></polygon>
+                                            <polygon
+                                                points="80,80 70,70"
+                                            ></polygon>
+                                        </svg>
+                                    </div>
+                                    <span>5.3k</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <p>(Data do post)</p>
+                            </div>
+                        </div>
+                        </div>
+                        <br />
+                        <br />
+                </div>
+            </div>
+        </div>
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script
+            type="text/javascript"
+            src="lib/framework7-bundle.min.js"
+        ></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
+    </body>
+</html>

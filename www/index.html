@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Color theme for statusbar (Android only) -->
+        <meta name="theme-color" content="#2196f3" />
+        <!-- Your app title -->
+        <title>PowerShape</title>
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+        <!-- CSS PERSONALIZADO PARA MENU-->
+        <link rel="stylesheet" href="css/index.css" />
+        <!--Ícones Material Design-->
+        <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+        <!-- Ícones Remix Icon -->
+        <link rel="stylesheet" href="css/remixicon/remixicon.css" />
+    </head>
+
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- TAB BAR-->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex" id="toolbar">
+                        <a href="/index/" class="tab-link link active">
+                            <i
+                                class="ri-home-5-line"
+                                style="margin-left: 0.15em"
+                            ></i>
+                            <span>Início</span>
+                        </a>
+                        <a href="/link2/" class="tab-link link">
+                            <i class="ri-search-2-line"></i>
+                            <span>Busca</span>
+                        </a>
+                        <a href="/link3/" class="tab-link link">
+                            <i
+                                class="ri-user-line"
+                                style="margin-left: 0.1em"
+                            ></i>
+                            <span>Perfil</span>
+                        </a>
+                        <a href="/link4/" class="tab-link link">
+                            <i
+                                class="ri-login-box-line"
+                                style="margin-left: 0.1em"
+                            ></i>
+                            <span>Login</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Initial Page, "data-name" contains page name -->
+                <div
+                    data-name="index"
+                    class="page color-theme-blue navbar-fixed toolbar-fixed"
+                >
+                    <!-- Top Navbar -->
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div class="navbar-inner justify-content-center">
+                            <div class="title">
+                                <strong
+                                    ><p style="text-align: center">
+                                        Página inicial
+                                    </p></strong
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/logo1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/logo1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/logo1.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/logo1.png" />
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 style="margin: 0 auto">
+                                    Você desbloqueou um novo troféu! 🏆
+                                </h3>
+                            </div>
+                            <div class="card-content">
+                                <!-- Card content -->
+                                <p style="text-align: center">
+                                    Você desbloqueou o troféu - O começo de tudo
+                                    ⭐
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="textdate">29/03/2024</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 style="margin: 0 auto">App criado! 📱</h3>
+                            </div>
+                            <div class="card-content">
+                                <!-- Card content -->
+                                <p style="font-size: 14px; text-align: center">
+                                    <strong>Atualização 1.0.0</strong>
+                                </p>
+                                <br />
+                                <p style="text-align: center">
+                                    O aplicativo foi criado com sucesso!
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="textdate">15/03/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script
+            type="text/javascript"
+            src="lib/framework7-bundle.min.js"
+        ></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
+        <script src="index.js" defer></script>
+        <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    </body>
+</html>

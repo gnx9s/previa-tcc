@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Color theme for statusbar (Android only) -->
+        <meta name="theme-color" content="#2196f3" />
+        <!-- Your app title -->
+        <title>My App</title>
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+        <!-- CSS PERSONALIZADO PARA MENU-->
+        <link rel="stylesheet" href="css/personalizado.css" />
+        <!--Ícones Material Design-->
+        <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    </head>
+
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="link4" class="page">
+                    <!-- Top Navbar -->
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div class="navbar-inner justify-content-center">
+                            <div class="title">
+                                <strong
+                                    >Perfil do Power<span>Shape</span></strong
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="block">
+                            <div
+                                class="linhasup"
+                                style="
+                                    display: flex;
+                                    flex-direction: row;
+                                    height: 20%;
+                                "
+                            >
+                                <h2
+                                    id="nome_user"
+                                    style="
+                                        text-align: start;
+                                        margin-top: 4vh;
+                                        font-size: 18px;
+                                    "
+                                >
+                                    Nicholas Balbino<br />
+                                    <span
+                                        style="
+                                            font-size: 14px;
+                                            color: var(--branco);
+                                        "
+                                        >Iniciante</span
+                                    >
+                                </h2>
+                                <div
+                                    class="img"
+                                    style="
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: 17vw;
+                                        width: 40%;
+                                    "
+                                >
+                                    <img
+                                        src="img/user.jpg"
+                                        alt="foto do usuário"
+                                        style="
+                                            height: 10em;
+                                            width: 10em;
+                                            border-radius: 100%;
+                                            margin-left: 50%;
+                                        "
+                                    />
+                                </div>
+                                <br />
+                            </div>
+                            <div class="grafico" style="text-align: center">
+                                <svg
+                                    style="margin-top: 1em; margin-left: 1.5em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="14em"
+                                    height="14em"
+                                    viewBox="0 0 100 100"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M54.193 12.87c-.731 0-1.325.594-1.325 1.326c0 .068.029.127.039.193h-.039v31.438c0 .732.594 1.326 1.325 1.326H85.63v-.039c.066.01.125.039.194.039c.731 0 1.325-.594 1.325-1.326c-.188-18.12-14.836-32.768-32.956-32.957"
+                                    />
+                                    <path
+                                        fill="currentColor"
+                                        d="M79.485 53.46c0-.732-.593-1.326-1.325-1.326H49.261a1.326 1.326 0 0 1-1.325-1.326V22.015h-.039c.01-.066.039-.125.039-.193c0-.733-.594-1.326-1.326-1.326c-.032 0-.058.016-.089.018v-.009c-.118-.001-.235-.009-.353-.009c-18.4 0-33.317 14.917-33.317 33.317S27.768 87.13 46.168 87.13s33.317-14.917 33.317-33.317c0-.106-.005-.211-.007-.318c0-.013.007-.023.007-.035"
+                                    />
+                                </svg>
+                                <h2>Próximo Ranque: Amador</h2>
+                            </div>
+
+                            <div class="demo-expandable-cards">
+                                <div class="card card-expandable">
+                                    <div class="card-content">
+                                        <div
+                                            class="bg-color-white"
+                                            style="height: 230px"
+                                        >
+                                            <div
+                                                class="card-header text-color-black display-block"
+                                            >
+                                                Troféus
+                                                <br />
+                                                <small style="opacity: 0.5"
+                                                    >Veja suas conquistas</small
+                                                >
+                                            </div>
+                                            <a
+                                                class="link card-close card-opened-fade-in color-black"
+                                                style="
+                                                    position: absolute;
+                                                    right: 15px;
+                                                    top: 15px;
+                                                "
+                                            >
+                                                <i class="icon f7-icons">X</i>
+                                            </a>
+                                        </div>
+                                        <div class="card-content-padding">
+                                            <p>
+                                                ⭐|
+                                                <strong
+                                                    >O começo de tudo</strong
+                                                >
+                                                <br />
+                                                Você se inscreveu na academia!
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                🕐|
+                                                <strong>Carga horária</strong>
+                                                <br />
+                                                Você passou mais de 100h na
+                                                academia!
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                💉| <strong>Suco?</strong>
+                                                <br />
+                                                Você fez amor com o suco, que
+                                                decepção...
+                                            </p>
+                                            <hr />
+                                            <p>
+                                                <a
+                                                    class="button button-fill button-round button-large card-close color-black"
+                                                    >Fechar</a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Path to Framework7 Library Bundle JS-->
+            <script
+                type="text/javascript"
+                src="lib/framework7-bundle.min.js"
+            ></script>
+            <!-- jQuery -->
+            <script
+                type="text/javascript"
+                src="lib/jquery-3.7.0.min.js"
+            ></script>
+            <!-- Roteamento do app-->
+            <script type="text/javascript" src="js/routes.js"></script>
+            <script src="cordova.js"></script>
+        </div>
+    </body>
+</html>

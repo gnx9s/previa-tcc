@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+        />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- Color theme for statusbar (Android only) -->
+        <meta name="theme-color" content="#2196f3" />
+        <!-- Your app title -->
+        <title>My App</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <!-- Path to Framework7 Library Bundle CSS -->
+        <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
+        <!-- CSS PERSONALIZADO PARA MENU-->
+        <link rel="stylesheet" href="css/personalizado.css" />
+        <!--Ícones Material Design-->
+        <link rel="stylesheet" href="css/materialdesignicons.min.css" />
+    </head>
+
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="link5" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="block">
+                            <div class="title"><h1>Recuperar senha</h1></div>
+                            <br />
+                            <div class="logoinicial">
+                                <img
+                                    class="logoinicial"
+                                    src="img/logo1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <br />
+                            <hr />
+                            <br />
+                            <div
+                                class="list list-strong-ios list-dividers-ios inset-ios"
+                            >
+                                <p>
+                                    Insira o e-mail ou o usuário utilizado para
+                                    criar a conta.
+                                </p>
+                                <ul>
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div
+                                                class="item-title item-floating-label"
+                                            >
+                                                E-mail ou nome de usuário
+                                            </div>
+                                            <div class="item-input-wrap">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Seu nome"
+                                                />
+                                                <span
+                                                    class="input-clear-button"
+                                                ></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <p>
+                                        Você receberá um link para redefinição
+                                        de senha.
+                                    </p>
+                                </ul>
+                                <br />
+                                <a href="/link4/">
+                                    <button
+                                        style="
+                                            margin: 0 auto;
+                                            display: block;
+                                            background-color: var(--amarelo);
+                                            width: 8em;
+                                            color: var(--pretasso);
+                                        "
+                                        class="button button-fill"
+                                    >
+                                        Enviar
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Path to Framework7 Library Bundle JS-->
+        <script
+            type="text/javascript"
+            src="lib/framework7-bundle.min.js"
+        ></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+        <!-- Roteamento do app-->
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script src="cordova.js"></script>
+    </body>
+</html>
